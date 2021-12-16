@@ -1,0 +1,266 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #c8bbbb;
+
+}
+
+/* nav bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+/* nav bar : logo image */
+
+#logo{
+    margin: -53px -21px;
+}
+
+#logo img{
+    margin: 57px 39px;
+    height: 50px;
+    border-radius: 28px;
+}
+
+/* nav bar : list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    cursor:pointer;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 297px;
+}
+
+#home::before{
+    content: "";
+    background: url('/images/foods/food1.jfif') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 358px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#home p{
+    color: #f69c9c;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* service section */
+
+.service-container h1{
+    margin-top: -32px;
+    margin-bottom: -10px;
+}
+
+
+#services{
+    display: flex;
+    margin: 34px;
+    margin-top: 0px; 
+}
+
+#services .box{
+    border: 2px solid red;
+    border: 2px solid red;
+    border-radius: 23px;
+    margin: 0px 4px;
+    padding: 0px 2px;
+    background-color: #e4d8d8;
+    width: 468px;
+}
+#services .box{
+    font-family: 'Patrick Hand', cursive;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 17px;
+}
+
+/* Client Section */
+#client-section{
+    height: 289px;
+}
+#client-section::before{
+    content: "";
+    background: url('/images/foods/food2.jfif') center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 305px;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+
+.client-item{
+    padding: 34px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* contact us section */
+#contact{
+    /* height: 460px; */
+    margin-top: 16px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Patrick Hand', cursive;
+} 
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    z-index: -2;
+    opacity: 0.9;
+    background: url('/images/contact.jpg') no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 46px;
+    height: auto;
+}
+
+#contact-box input{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+
+}
+
+#contact-box textarea{
+    border-radius: 9px;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+    height: 75px;
+}
+
+
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px 0px;
+    margin-top: 37px;
+    
+}
+
+button{
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: 1px 25px;
+    display: block;
+    margin: auto;
+    font-size: 29px;
+}
+
+/* Utility code */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 12px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+.btn{
+    padding: 1px 4px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: none;
+}
+
+.center{
+    text-align: center;
+}
